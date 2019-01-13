@@ -1,0 +1,128 @@
+.top-menu{
+  width:100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  height: 60px;
+  background-color: #ccc;
+}
+.container{
+  margin:60px auto;
+  width: 1024px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  background-color: #f00;
+  height: 100%;
+}
+.header{
+  width:1034px;
+  margin-right: -5px;
+  margin-top: -5px;
+  margin-left: -5px;
+  height: 200px;
+  background-color: #aaa;
+}
+.logo{
+   width:300px;
+   height: 100px;
+   margin-left:50px;
+   margin-top:50px; 
+   float: left;
+   background-color: #aca;
+}
+.slider-area{
+  width:1034px;
+  margin-right: -5px;
+  margin-top: 10px;
+  margin-left: -5px;
+  height: 250px;
+  background-color: #aaa;
+}
+.breadcump-area{
+  width:1034px;
+  margin-right: -5px;
+  margin-top: 10px;
+  margin-left: -5px;
+  height: 50px;
+  background-color: #aaa;
+}
+/*sola yasla*/
+.left {
+  float: left;
+  margin-left: -5px;
+  margin-top: 10px;
+  height: 1030px;
+  width: 745px;
+  background-color: #aaa;
+}
+.content-area{
+  width:745px;
+  height: 250px;
+  margin-bottom: 10px;
+  background-color: #555;
+}
+.content-pic{
+  width:300px;
+  height: 230px;
+  margin-left:10px;
+  margin-top:10px; 
+  float: left;
+  background-color: #aca;
+}
+.content-button{
+  width:200px;
+  height: 40px;
+  margin-right:10px;
+  margin-top:180px; 
+  float: right;
+  text-align: center;
+  padding-top: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #aca;
+  color:#000;
+}
+.content-button a{
+  text-decoration: none;
+  color: #000;
+}
+.content-button a:hover{
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+/*saga yasla*/
+.right {
+  float: right;
+  margin-right: -5px;
+  margin-top: 10px;
+  height: 1030px;
+  width: 280px;
+  background-color: #aaa;
+}
+.profile-area{
+  width:280px;
+  height: 250px;
+  background-color: #555;
+}
+.category-area{
+  width:280px;
+  margin-top:10px;  
+  height: 770px;
+  background-color: #555;
+}
+.clear{
+  clear: both;
+}
+.footer{
+  width:1034px;
+  margin-right: -5px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  margin-left: -5px;
+  height: 200px;
+  background-color: #aaa;
+}
