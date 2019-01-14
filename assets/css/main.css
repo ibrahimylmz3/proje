@@ -7,6 +7,14 @@
   height: 60px;
   background-color: #ccc;
 }
+.admin-top-menu{
+  width:100%;
+  right: 0;
+  top: 0;
+  left: 0;
+  height: 60px;
+  background-color: #ccc;
+}
 .container{
   margin:60px auto;
   width: 1024px;
@@ -16,6 +24,16 @@
   padding-bottom: 0px;
   background-color: #f00;
   height: 100%;
+}
+.admin-container{
+  margin:10px auto;
+  width: 1024px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  background-color: #f00;
+  height: auto;
 }
 .header{
   width:1034px;
@@ -28,6 +46,11 @@
 .logo{
    margin-left:50px;
    margin-top:75px; 
+   float: left;
+}
+.admin-logo{
+   margin-left:50px;
+   margin-top:50px; 
    float: left;
 }
 .slider-area{
@@ -54,6 +77,36 @@
   height: 1030px;
   width: 745px;
   background-color: #aaa;
+}
+.admin-left{
+  float: left;
+  margin-left: -5px;
+  margin-top: 10px;
+  height: auto;
+  width: 280px;
+  background-color: #aaa;
+}
+.admin-center-area{
+  width: 745px;
+  margin-right: -5px;
+  margin-top: 10px;
+  margin-left: -5px;
+  height: 50px;
+  background-color: #aaa;
+  float: right;
+}
+.admin-center-area-right{
+  width: 200px;
+  float: right;
+  height: 35px;
+  text-align: center;
+  padding-top:15px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.admin-center-area-right a{
+  text-decoration: none;
+  color:#000;
 }
 .content-area{
   width:745px;
@@ -99,6 +152,28 @@
   height: 1030px;
   width: 280px;
   background-color: #aaa;
+}
+.admin-right{
+  float: right;
+  margin-right: -5px;
+  margin-top: 10px;
+  height: auto;
+  width: 745px;
+  background-color: #aaa;
+}
+.admin-right-area fieldset{
+  border:none;
+}
+.admin-right-area h3{
+  text-align: center;
+}
+.admin-right-area input{
+  width: 100%;
+  height: 30px;
+}
+.admin-right-area textarea{
+  width: 100%;
+  height: 300px
 }
 .profile-area{
   width:280px;
@@ -500,5 +575,29 @@
   text-align: center;
   margin-top: 4px;
   padding:3px;
+  background-color: #fff;
+}
+.slider-ekle-upload-area{
+  margin:5px;
+  width: 735px;
+  height: 200px;
+  background-color: #fff;
+}
+.slider-ekle-upload{
+  width: 200px;
+  height: 100%;
+  margin-left: 250px;
+  overflow: hidden;
+}
+.slider-ekle-upload img{
+  width: 100%;
+  height: 100%;
+  margin:0;
+  padding:0;
+}
+.slider-upload-list{
+  margin:5px;
+  width: 735px;
+  height: 200px;
   background-color: #fff;
 }
