@@ -106,9 +106,7 @@ fieldset {
   color:#000 !important;
   text-decoration
 }
-#contact input[type="text"],
-#contact input[type="password"],
-#contact input[type="email"],
+#contact input,
 #contact textarea{
   width: 100%;
   border: 1px solid #ccc;
@@ -117,9 +115,7 @@ fieldset {
   padding: 10px;
 }
 
-#contact input[type="text"]:hover,
-#contact input[type="password"]:hover,
-#contact input[type="email"]:hover,
+#contact input:hover,
 #contact textarea:hover{
   -webkit-transition: border-color 0.3s ease-in-out;
   -moz-transition: border-color 0.3s ease-in-out;
@@ -154,20 +150,4 @@ fieldset {
 #contact textarea:focus{
   outline: 0;
   border: 1px solid #aaa;
-}
-
-::-webkit-input-placeholder {
-  color: #888;
-}
-
-:-moz-placeholder {
-  color: #888;
-}
-
-::-moz-placeholder {
-  color: #888;
-}
-
-:-ms-input-placeholder {
-  color: #888;
 }

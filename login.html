@@ -10,18 +10,19 @@
 		<div class="logo"><img src="assets/img/logo.png"></div>
 	</div>
 	<div class="container-form">  
-	  <form id="contact" action="" method="post">
+	  <form id="contact">
 	  	<h4>Giriş Yap</h4>
 	    <fieldset>
-	      <input placeholder="Kullanıcı Adı" type="text" tabindex="1" required autofocus>
+	      <input id="k_adi" placeholder="Kullanıcı Adı" type="text">
 	    </fieldset>
 	    <fieldset>
-	      <input placeholder="Şifreniz" type="password" tabindex="2" required>
+	      <input id="pass" placeholder="Şifreniz" type="password">
 	    </fieldset>
 	    	<a class="a" href="#">Şifremi Unuttum</a>
 	    <fieldset>
-	      <button name="submit" type="submit" id="contact-submit" data-submit="...gönderiliyor">Giriş Yap</button>
+	      <button type="submit" id="contact-submit" onclick="kontrol()">Giriş Yap</button>
 	    </fieldset>
+	    <p class="result" id="result"></p>
 	  </form>
 	</div>
 	<div class="footer-login">
@@ -29,6 +30,6 @@
 			&copy; Copyright 2018 - Tüm Hakları Saklıdır.
 		</div>
 	</div>
+	<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
-<script type="text/javascript" src="assets/js/main.js"></script>
 </html>

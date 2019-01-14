@@ -598,6 +598,88 @@
 .slider-upload-list{
   margin:5px;
   width: 735px;
-  height: 200px;
+  height: auto;
   background-color: #fff;
+}
+.slide-admin-img{
+  width: 238px;
+  height: 238px;
+  border:1px solid #ccc;
+  float: left;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  overflow: hidden;
+  transition: all .3s ease-in;
+}
+.slide-admin-img:hover{
+  z-index: 2;
+  transform: scale(1.5);
+}
+.slide-admin-img img{
+  width:100%;
+  height:100%;
+  padding:0;
+  margin:0;
+}
+.slider-duzenle-button button{
+  width: 200px;
+  height: 75px;
+  font-size: 20px;
+  margin-top: 60px;
+  margin-left: 110px;
+}
+.slide-admin-duzenle-area{
+  width: 100%;
+  height: 300px;
+}
+.slide-admin-duzenle-area img {
+  width: 100%;
+  height: 100%;
+}
+.slide-admin-duzenle-area-text{
+  width: 100%;
+  height: 189px;
+  padding:3px;
+}
+.kategori-ekle{
+  margin:5px;
+  width: 735px;
+  height: auto;
+  background-color: #fff;
+}
+.kategori-ekle input{
+  width: 715px;
+  height: 50px;
+  padding:3px;
+  margin: 5px;
+}
+.kategori-ekle button{
+  width: 725px;
+  height: 50px;
+  padding:3px;
+  margin: 5px;
+}
+.kategori-listele{
+  width: 715px;
+  height: 50px;
+  padding:3px;
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+.kategori-ekle textarea{
+  margin: 5px;
+  width: 720px;
+  height: 400px;
+}
+.content-pic img{
+  width: 100%;
+  height: 100%;
+}
+.content-text{
+  float: left;
+  width: auto;
+  height: auto;
+  margin-left:10px;
+  margin-top: 10px;
 }
