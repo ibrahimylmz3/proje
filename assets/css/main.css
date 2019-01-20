@@ -7,6 +7,12 @@
   height: 60px;
   background-color: #ccc;
 }
+
+body {
+  color: #076C94;
+  background: #076C94;
+}
+
 .admin-top-menu{
   width:100%;
   right: 0;
@@ -22,7 +28,7 @@
   padding-right: 5px;
   padding-top: 5px;
   padding-bottom: 0px;
-  background-color: #f00;
+  background: #F7F7F7;
   height: 100%;
 }
 .admin-container{
@@ -41,7 +47,7 @@
   margin-top: -5px;
   margin-left: -5px;
   height: 200px;
-  background-color: #aaa;
+  background: #F7F7F7;
 }
 .logo{
    margin-left:50px;
@@ -67,7 +73,7 @@
   margin-top: 10px;
   margin-left: -5px;
   height: 50px;
-  background-color: #aaa;
+  background: #F7F7F7;
 }
 /*sola yasla*/
 .left {
@@ -76,7 +82,7 @@
   margin-top: 10px;
   height: 1030px;
   width: 745px;
-  background-color: #aaa;
+  background: #F0F0F0;
 }
 .admin-left{
   float: left;
@@ -114,6 +120,9 @@
   margin-bottom: 10px;
   background-color: #555;
 }
+.content-text{
+  color: #fff;
+}
 .content-pic{
   width:300px;
   height: 230px;
@@ -132,12 +141,12 @@
   padding-top: 20px;
   text-decoration: none;
   cursor: pointer;
-  background-color: #aca;
-  color:#000;
+  background: #076C94;
+  color:#fff;
 }
 .content-button a{
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 .content-button a:hover{
   text-decoration: none;
@@ -151,7 +160,7 @@
   margin-top: 10px;
   height: 1030px;
   width: 280px;
-  background-color: #aaa;
+  background-color: #555;
 }
 .admin-right{
   float: right;
@@ -226,11 +235,11 @@
   margin-top: 10px;
   margin-left: -5px;
   height: 200px;
-  background-color: #aaa;
+  background: #F7F7F7;
 }
 
 .copyright{
-  color: #fff;
+  color: #000;
   font-size: 15px;
   padding: 8px 12px;
   width: auto;
@@ -238,7 +247,6 @@
   margin-top: 80px;
   padding-left: 30px;
   text-align: center;
-  background-color: #ddd;
   float: left;
 }
 
@@ -274,7 +282,7 @@
 }
 
 .right-li a:hover:not(.right-active) {
-  background-color: #555;
+  background-color: #076C94;
   color: white;
 }
 
@@ -289,7 +297,7 @@
   margin-right: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
-  background-color: #333;
+  background: #555;
 }
 
 .navbar-li {
@@ -305,7 +313,8 @@
 }
 
 .navbar-li a:hover:not(.navbar-active) {
-  background-color: #111;
+  background-color: #F7F7F7;
+  color:#000;
 }
 
 .navbar-active {
@@ -317,25 +326,27 @@
 .breadcrumb-ul {
   padding: 15px 16px;
   list-style: none;
-  background-color: #eee;
+  background: #555;
   max-height: 100%;
+  color:#fff;
 }
 .breadcrumb-ul li {
   display: inline;
   font-size: 18px;
   max-height: 100%;
+  color:#fff;
 }
 .breadcrumb-ul li+li:before {
   padding: 8px;
-  color: black;
+  color: #fff;
   content: "/\00a0";
 }
 .breadcrumb-ul li a {
-  color: #0275d8;
+  color: #fff;
   text-decoration: none;
 }
 .breadcrumb-ul li a:hover {
-  color: #01447e;
+  color: #ccc;
   text-decoration: underline;
 }
 

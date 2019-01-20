@@ -1,47 +1,70 @@
+function validateForm() {
+        var un = document.loginform.usr.value;
+        var pw = document.loginform.pword.value;
+        var username = "iyilmazc"; 
+        var password = "iyilmazc";
+        if ((un == "") || (pw == "")) {    
+        alert("form boş geçilemezdir.");
+        return false;
+        }
+        if ((un == username) && (pw == password)) {
+            alert("giriş başarılı yoldaş. seni yönlendiriyoruz.");
+            window.location.href = "userProfil.html";
+            return true;
+        }
+        else {
+            alert ("girdiğiniz kullanıcı adı: "+ un +" veya şifre: "+ pw +" yanlış. tekrar kontrol et.\n Önek Kullanıcı Adı: " + username + " \n Örnek Şifre: " + password + "");
+            document.location.reload(true);
+            return false;
+        }
+  }
+    
+var icerikler = [
+    {id: 1, aciklama: 'Refarans yazısı - 1', image: 'assets/img/index-pic.jpg'},
+    {id: 2, aciklama: 'Refarans yazısı - 2', image: 'assets/img/index-pic1.jpg'},
+    {id: 3, aciklama: 'Refarans yazısı - 3', image: 'assets/img/index-pic2.jpg'},
+    {id: 4, aciklama: 'Refarans yazısı - 4', image: 'assets/img/index-pic3.jpg'}]
+
+var kategoriler = [
+    {id:1, kategoriName: 'kategori - 1', kategoriLink: 'http://iyilmaz.com/'},
+    {id:2, kategoriName: 'kategori - 2', kategoriLink: 'http://iyilmaz.com/'},
+    {id:3, kategoriName: 'kategori - 3', kategoriLink: 'http://iyilmaz.com/'},
+    {id:4, kategoriName: 'kategori - 4', kategoriLink: 'http://iyilmaz.com/'}]
+
+function sayfaHazir() {
+    var site_aciklama = "iyilmaz.com";
+    var copyright = document.getElementById("copyright").innerHTML = "&copy; Copyright 2018 - <a href='http://"+ site_aciklama +"/' target='_blank'>" + site_aciklama + "</a> - Tüm Hakları Saklıdır" ;
+    var iceriklerim = document.getElementById("iceriklerimiz");
+        for (let index = 0; index < icerikler.length; index++) {
+            iceriklerim.innerHTML = iceriklerim.innerHTML + '<div class="content-area" id="contentArea">' + '<div class="content-pic"><img src="' + icerikler[index].image + '"></div><div class="content-text">' + icerikler[index].aciklama + '</div><div class="content-button"><a href="#">Devamını Oku</a></div></div>';
+        }
+    var kategorilerim = document.getElementById("kategorilerimiz");
+    kategorilerim.innerHTML = kategorilerim.innerHTML + '<li class="right-li"><a class="right-active">Kategorilerimiz</a></li>';
+        for (let index = 0; index < kategoriler.length; index++){
+            kategorilerim.innerHTML = kategorilerim.innerHTML + '<li class="right-li"><a target="_blank" href="'+ kategoriler[index].kategoriLink +'">' + kategoriler[index].kategoriName + '</a></li>';
+        }
+    }
+
 var slideIndex = 1;
-showSlides(slideIndex);
-
+    showSlides(slideIndex);
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+    showSlides(slideIndex += n);
 }
-
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+    showSlides(slideIndex = n);
 }
-
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
 }
-    function kontrol(text) {
-        var username, pass, text ; 
-        username= document.getElementById("k_adi").value.length;
-        pass= document.getElementById("pass").value.length;
-        
-        if (username == 0 || pass == 0) {    
-        text= "Kullanıcı adı veya şifre boş";
-        }
-        else if (pass < 6) {
-        text= "Sifre 6 karakterden kısa";
-        }
-        else if (username < 3 || username > 20) {    
-        text= "Kullanici adi 3-20 karakter arasında olmalıdır"; 
-        }
-        else {    
-        text= "Giriş Başarılı" ;
-        console.log("Profil sayfasına yönlendiriliyorsunuz");
-        window.location.href = "userProfil.html";
-        }
-        document.getElementById("result").innerHTML = text;
-  }

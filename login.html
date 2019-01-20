@@ -9,18 +9,18 @@
 	<div class="header">
 		<div class="logo"><img src="assets/img/logo.png"></div>
 	</div>
-	<div class="container-form">  
-	  <form id="contact">
+	<div class="container-form" id="contactForm">  
+	  <form id="contact" name="loginform" method="post">
 	  	<h4>Giriş Yap</h4>
 	    <fieldset>
-	      <input id="k_adi" placeholder="Kullanıcı Adı" type="text">
+	      <input id="usr" placeholder="Kullanıcı Adı" type="text">
 	    </fieldset>
 	    <fieldset>
-	      <input id="pass" placeholder="Şifreniz" type="password">
+	      <input id="pword" placeholder="Şifreniz" type="password">
 	    </fieldset>
 	    	<a class="a" href="#">Şifremi Unuttum</a>
 	    <fieldset>
-	      <button type="submit" id="contact-submit" onclick="kontrol()">Giriş Yap</button>
+	      <button type="button" id="contact-submit" onclick="validateForm()">Giriş Yap</button>
 	    </fieldset>
 	    <p class="result" id="result"></p>
 	  </form>
