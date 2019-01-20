@@ -1,29 +1,45 @@
 function validateForm() {
-        var un = document.loginform.usr.value;
-        var pw = document.loginform.pword.value;
-        var username = "iyilmazc"; 
-        var password = "iyilmazc";
-        if ((un == "") || (pw == "")) {    
+    var un = document.loginform.usr.value;
+    var pw = document.loginform.pword.value;
+    var username = "iyilmazc"; 
+    var password = "iyilmazc";
+    if ((un == "") || (pw == "")) {    
         alert("form boş geçilemezdir.");
         return false;
-        }
-        if ((un == username) && (pw == password)) {
-            alert("giriş başarılı yoldaş. seni yönlendiriyoruz.");
-            window.location.href = "userProfil.html";
-            return true;
-        }
-        else {
-            alert ("girdiğiniz kullanıcı adı: "+ un +" veya şifre: "+ pw +" yanlış. tekrar kontrol et.\n Önek Kullanıcı Adı: " + username + " \n Örnek Şifre: " + password + "");
-            document.location.reload(true);
-            return false;
-        }
-  }
-    
+    }
+    if ((un == username) && (pw == password)) {
+        alert("giriş başarılı yoldaş. seni yönlendiriyoruz.");
+        window.location.href = "userProfil.html";
+        return true;
+    }
+    else {
+        alert ("girdiğiniz kullanıcı adı: "+ un +" veya şifre: "+ pw +" yanlış. tekrar kontrol et.\n Önek Kullanıcı Adı: " + username + " \n Örnek Şifre: " + password + "");
+        document.location.reload(true);
+        return false;
+    }
+}
+
+function signinForm(){
+    var ad = document.signinForms.ad.value; 
+    var soyad = document.signinForms.soyad.value;
+    var mail = document.signinForms.mail.value;
+    var kAdi = document.signinForms.kAdi.value;
+    var sektor = document.signinForms.sektor.value;
+    var hakkinizda = document.signinForms.hakkinizda.value;
+    if ((ad == "") || (soyad == "") || (mail == "") || (kAdi == "") || (sektor == "") || (hakkinizda == "")) {    
+        alert("form boş geçilemezdir.");
+        return false;
+    }
+    else{
+        alert("kayıt olmayı başardınız ancak bu bilgileri kayıt edebileceğimiz bir veri tabanımız yok :)");
+    }
+}
+
 var icerikler = [
-    {id: 1, aciklama: 'Refarans yazısı - 1', image: 'assets/img/index-pic.jpg'},
-    {id: 2, aciklama: 'Refarans yazısı - 2', image: 'assets/img/index-pic1.jpg'},
-    {id: 3, aciklama: 'Refarans yazısı - 3', image: 'assets/img/index-pic2.jpg'},
-    {id: 4, aciklama: 'Refarans yazısı - 4', image: 'assets/img/index-pic3.jpg'}]
+    {id:1, aciklama: 'Refarans yazısı - 1', image: 'assets/img/index-pic.jpg'},
+    {id:2, aciklama: 'Refarans yazısı - 2', image: 'assets/img/index-pic1.jpg'},
+    {id:3, aciklama: 'Refarans yazısı - 3', image: 'assets/img/index-pic2.jpg'},
+    {id:4, aciklama: 'Refarans yazısı - 4', image: 'assets/img/index-pic3.jpg'}]
 
 var kategoriler = [
     {id:1, kategoriName: 'kategori - 1', kategoriLink: 'http://iyilmaz.com/'},
@@ -43,16 +59,19 @@ function sayfaHazir() {
         for (let index = 0; index < kategoriler.length; index++){
             kategorilerim.innerHTML = kategorilerim.innerHTML + '<li class="right-li"><a target="_blank" href="'+ kategoriler[index].kategoriLink +'">' + kategoriler[index].kategoriName + '</a></li>';
         }
-    }
+}
 
 var slideIndex = 1;
     showSlides(slideIndex);
+
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
+
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
+
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
