@@ -34,7 +34,9 @@ function signinForm(){
         alert("kayıt olmayı başardınız ancak bu bilgileri kayıt edebileceğimiz bir veri tabanımız yok :)");
     }
 }
-
+function logo_url() {
+    var path = window.location.href;
+}
 var icerikler = [
     {id:1, aciklama: 'Refarans yazısı - 1', image: 'assets/img/index-pic.jpg'},
     {id:2, aciklama: 'Refarans yazısı - 2', image: 'assets/img/index-pic1.jpg'},
@@ -42,14 +44,15 @@ var icerikler = [
     {id:4, aciklama: 'Refarans yazısı - 4', image: 'assets/img/index-pic3.jpg'}]
 
 var kategoriler = [
-    {id:1, kategoriName: 'kategori - 1', kategoriLink: 'http://iyilmaz.com/'},
-    {id:2, kategoriName: 'kategori - 2', kategoriLink: 'http://iyilmaz.com/'},
-    {id:3, kategoriName: 'kategori - 3', kategoriLink: 'http://iyilmaz.com/'},
-    {id:4, kategoriName: 'kategori - 4', kategoriLink: 'http://iyilmaz.com/'}]
+    {id:1, kategoriName: 'kategori - 1', kategoriLink: '#'},
+    {id:2, kategoriName: 'kategori - 2', kategoriLink: '#'},
+    {id:3, kategoriName: 'kategori - 3', kategoriLink: '#'},
+    {id:4, kategoriName: 'kategori - 4', kategoriLink: '#'}]
 
 function sayfaHazir() {
-    var site_aciklama = "iyilmaz.com";
-    var copyright = document.getElementById("copyright").innerHTML = "&copy; Copyright 2018 - <a href='http://"+ site_aciklama +"/' target='_blank'>" + site_aciklama + "</a> - Tüm Hakları Saklıdır" ;
+    var site_aciklama = "İbrahim Yılmaz";
+    var path = window.location.href;
+    var copyright = document.getElementById("copyright").innerHTML = "&copy; Copyright 2018 - <a href='"+ path +"'>" + site_aciklama + "</a> - Tüm Hakları Saklıdır" ;
     var iceriklerim = document.getElementById("iceriklerimiz");
         for (let index = 0; index < icerikler.length; index++) {
             iceriklerim.innerHTML = iceriklerim.innerHTML + '<div class="content-area" id="contentArea">' + '<div class="content-pic"><img src="' + icerikler[index].image + '"></div><div class="content-text">' + icerikler[index].aciklama + '</div><div class="content-button"><a href="#">Devamını Oku</a></div></div>';
@@ -61,7 +64,7 @@ function sayfaHazir() {
         }
 }
 
-var slideIndex = 1;
+var slideIndex = 0;
     showSlides(slideIndex);
 
 function plusSlides(n) {
