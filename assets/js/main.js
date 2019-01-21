@@ -38,11 +38,11 @@ function logo_url() {
     var path = window.location.href;
 }
 var icerikler = [
-    {id:1, aciklama: 'Refarans yazısı - 1', image: 'assets/img/index-pic.jpg'},
-    {id:2, aciklama: 'Refarans yazısı - 2', image: 'assets/img/index-pic1.jpg'},
-    {id:3, aciklama: 'Refarans yazısı - 3', image: 'assets/img/index-pic2.jpg'},
-    {id:4, aciklama: 'Refarans yazısı - 4', image: 'assets/img/index-pic3.jpg'}]
-
+    {id:1, aciklama: 'Refarans yazısı - 1', image: 'assets/img/index-pic.jpg', buttonUrl: 'content/ref-1.html' },
+    {id:2, aciklama: 'Refarans yazısı - 2', image: 'assets/img/index-pic1.jpg', buttonUrl: 'content/ref-2.html'},
+    {id:3, aciklama: 'Refarans yazısı - 3', image: 'assets/img/index-pic2.jpg', buttonUrl: 'content/ref-3.html'},
+    {id:4, aciklama: 'Refarans yazısı - 4', image: 'assets/img/index-pic3.jpg', buttonUrl: 'content/ref-4.html'}]
+    
 var kategoriler = [
     {id:1, kategoriName: 'kategori - 1', kategoriLink: '#'},
     {id:2, kategoriName: 'kategori - 2', kategoriLink: '#'},
@@ -55,7 +55,7 @@ function sayfaHazir() {
     var copyright = document.getElementById("copyright").innerHTML = "&copy; Copyright 2018 - <a href='"+ path +"'>" + site_aciklama + "</a> - Tüm Hakları Saklıdır" ;
     var iceriklerim = document.getElementById("iceriklerimiz");
         for (let index = 0; index < icerikler.length; index++) {
-            iceriklerim.innerHTML = iceriklerim.innerHTML + '<div class="content-area" id="contentArea">' + '<div class="content-pic"><img src="' + icerikler[index].image + '"></div><div class="content-text">' + icerikler[index].aciklama + '</div><div class="content-button"><a href="#">Devamını Oku</a></div></div>';
+            iceriklerim.innerHTML = iceriklerim.innerHTML + '<div class="content-area" id="contentArea">' + '<div class="content-pic"><img src="' + icerikler[index].image + '"></div><div class="content-text">' + icerikler[index].aciklama + '</div><div class="content-button"><a href="' + icerikler[index].buttonUrl + '">Devamını Oku</a></div></div>';
         }
     var kategorilerim = document.getElementById("kategorilerimiz");
     kategorilerim.innerHTML = kategorilerim.innerHTML + '<li class="right-li"><a class="right-active">Kategorilerimiz</a></li>';
